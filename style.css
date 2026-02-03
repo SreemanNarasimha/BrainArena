@@ -258,7 +258,8 @@ nav ul li.active a, nav ul li a:hover {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    color: var(--text-dim);
+    color: var(--accent-blue);
     font-size: 14px;
     border-top: 1px solid var(--border-color);
+
 }
