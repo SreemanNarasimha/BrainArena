@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainArena Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .box, .qbox {
+            transition: border-color 0.3s ease;
+            border: 2px solid transparent; /* Add transparent border to prevent layout shift on hover */
+        }
+        .box:hover, .qbox:hover {
+            border-color: #38bdf8; /* A highlight color for the border */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="menu">
+        <div class="logo"><i class="fas fa-brain"></i> BRAINARENA</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                <li><a href="#quests"><i class="fas fa-rocket"></i> Quests</a></li>
+                <li><a href="#rankings"><i class="fas fa-chart-bar"></i> Rankings</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <div class="level">
+                <span>LEVEL 12</span>
+                <strong>Neuro-Master</strong>
+            </div>
+            <div class="avatar"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <div class="box xp">
+                <div class="boxhead">
+                    <h2>XP Progress</h2>
+                    <div class="xptext">2,460 <span>/ 3,000</span></div>
+                </div>
+                <p>You need <span class="blue">540 XP</span> to reach Level 13</p>
+                <div class="pbg">
+                    <div class="pfg"></div>
+                </div>
+                <div class="ranktext">
+                    <span>RANK: NEURO-MASTER</span>
+                    <span>RANK: DIGITAL ARCHITECT</span>
+                </div>
+            </div>
+
+            <div class="box badges">
+                <div class="boxhead">
+                    <h3>UNLOCKED BADGES</h3>
+                    <span>3 / 12</span>
+                </div>
+                <div class="badgeflex">
+                    <div class="badge active"><i class="fas fa-trophy"></i></div>
+                    <div class="badge active"><i class="fas fa-layer-group"></i></div>
+                    <div class="badge active"><i class="fas fa-bolt"></i></div>
+                </div>
+                <a href="#" class="link">View All Achievements</a>
+            </div>
+        </section>
+
+        <section class="quests" id="quests">
+            <div class="title">
+                <h3><i class="fas fa-bolt"></i> ACTIVE QUESTS</h3>
+            </div>
+            <div class="qgrid">
+                <div class="qbox">
+                    <span class="label easy">EASY</span>
+                    <div class="icon"><i class="fas fa-file-export"></i></div>
+                    <h4>Archive Notes</h4>
+                </div>
+                <div class="qbox">
+                    <span class="label elite">ELITE</span>
+                    <div class="icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Neural Gauntlet</h4>
+                </div>
+                <div class="qbox">
+                    <span class="label medium">MEDIUM</span>
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h4>Arena Mentor</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="rankings" id="rankings">
+            <div class="title">
+                <h3><i class="fas fa-chart-bar"></i> RANKINGS</h3>
+            </div>
+            <div class="box rankbox">
+                <ul class="rlist">
+                    <li class="ritem">
+                        <span class="rnum">1</span>
+                        <span class="rname">Alex Mercer</span>
+                        <span class="rxp">15,230 XP</span>
+                    </li>
+                    <li class="ritem">
+                        <span class="rnum">2</span>
+                        <span class="rname">CyberNinja</span>
+                        <span class="rxp">14,880 XP</span>
+                    </li>
+                    <li class="ritem">
+                        <span class="rnum">3</span>
+                        <span class="rname">Glitch</span>
+                        <span class="rxp">13,500 XP</span>
+                    </li>
+                    <li class="ritem myrank">
+                        <span class="rnum">12</span>
+                        <span class="rname">You (Neuro-Master)</span>
+                        <span class="rxp">2,460 XP</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 designed by Sreeman Narasimha . All rights reserved</p>
+    </footer>
+
+</body>
+</html>
